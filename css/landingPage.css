@@ -1,0 +1,751 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.h2,
+.h3,
+.h4 {
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+/* HEADER */
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Monomaniac One', sans-serif;
+    padding: 1rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+@media screen and (min-width: 820px) {
+    .header_nav_ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .header_nav_ul_li {
+        font-size: 1.0125rem;
+    }
+
+    .header_nav_ul_li_a {
+        padding: 1.6875rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header_nav_ul_li_a:hover {
+        transition: 0.5s;
+        color: #866DA0;
+    }
+
+
+    /* BANNER */
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFF84;
+        overflow: hidden;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .bannerImg {
+        margin: 10px;
+        display: flex;
+        max-height: 48%;
+        z-index: 2;
+    }
+
+    .bannerContent {
+        margin: 10px;
+        max-width: 41%;
+    }
+
+    .h1_banner {
+        color: #000;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 35, 5%;
+    }
+
+    .roxo {
+        color: #866DA0;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .paragraph_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #272721;
+        text-align: center;
+        font-family: 'Montaga', serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btnSaibaMais {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: #866DA0;
+        border: 1px solid #866DA0;
+        border-radius: 16px;
+        padding: 0.75rem 3rem 0.75rem 3rem;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #btnSaibaMais:hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    /* SOBRE NÓS */
+    #aboutUs {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .aboutUsText {
+        font-size: 21px;
+        max-width: 50%;
+        margin: 10% 5% 10% 10%;
+    }
+
+    .ancora_etechas {
+        color: #645178;
+        text-decoration: none;
+    }
+
+    .ancora_etechas:hover {
+        text-decoration: underline;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+
+    /* CALCULADORA */
+    #calculadora {
+        background-image: url(../img/Background.png);
+        position: relative;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .calcContent {
+        margin: 0% 5% 5% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #calcButtonID {
+        text-decoration: none;
+        color: white;
+        background-color: #866DA0;
+        border-radius: 1.125rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 24px
+    }
+
+    #calcButtonID:hover {
+        font-size: 1.625rem;
+        background-color: #645178;
+    }
+
+    .calcText {
+        max-width: 58%;
+        color: rgba(0, 0, 0, 0.86);
+        font-family: 'Montaga';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .auto-layout-type-buttonBottom {
+        display: none;
+    }
+
+
+    /* RODAPÉ (FOOTER) */
+    /* FALE CONOSCO */
+    #faleConosco {
+        background-color: hsl(60, 100%, 86%);
+    }
+
+    .footerTop {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footer_p {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1.25rem;
+    }
+
+    #form_newsletter_inputEmail {
+        display: flex;
+        padding: 0.25rem;
+        border: 1px solid #866DA0;
+    }
+
+    #form_newsletter_button {
+        display: flex;
+        justify-content: left;
+        padding: 0.125rem 1rem 0.125rem 1rem;
+        background-color: #645178;
+        font-family: 'Monomaniac One', sans-serif;
+        border: 1px solid #645178;
+        color: white;
+        border-radius: 1.6rem;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: 0.125rem;
+    }
+
+    #form_newsletter_button:hover {
+        cursor: pointer;
+        background-color: #866DA0;
+    }
+}
+
+/* PARA TABLET */
+@media screen and (max-width: 820px) and (min-width: 620px) {
+    .header_nav_ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .header_nav_ul_li {
+        font-size: 18px;
+    }
+
+    .header_nav_ul_li_a {
+        padding: 1.6875rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header_nav_ul_li_a:hover {
+        transition: 0.5s;
+        color: #614d7b;
+    }
+
+    /* BANNER */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFF84;
+        overflow: hidden;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .bannerImg {
+        position: absolute;
+        opacity: 0.2;
+        z-index: 2;
+        margin: 10px;
+        display: flex;
+        max-height: 48%;
+    }
+
+    .bannerContent {
+        text-align: center;
+        z-index: 3;
+        margin: 10px;
+        max-width: 41%;
+    }
+
+    .h1_banner {
+        color: #000;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 35, 5%;
+    }
+
+    .roxo {
+        color: #866DA0;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .paragraph_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #272721;
+        text-align: center;
+        font-family: 'Montaga', serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btnSaibaMais {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: #866DA0;
+        border: 1px solid #866DA0;
+        border-radius: 16px;
+        padding: 0.75rem 3rem 0.75rem 3rem;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #btnSaibaMais:hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    /* SOBRE NÓS */
+    #aboutUs {
+        margin: 5% 5% 5% 10%;
+    }
+
+    .aboutUsText {
+        font-size: 21px;
+        max-width: none;
+    }
+
+    .ancora_etechas {
+        color: #645178;
+        text-decoration: none;
+    }
+
+    .ancora_etechas:hover {
+        text-decoration: underline;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+    /* CALCULADORA */
+    #calculadora {
+        background-image: url(../img/Background.png);
+        position: relative;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .calcContent {
+        margin: 5% 5% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #calcButtonID {
+        text-decoration: none;
+        color: white;
+        background-color: #866DA0;
+        border-radius: 1.125rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 24px
+    }
+
+    #calcButtonID:hover {
+        font-size: 1.625rem;
+        background-color: #645178;
+    }
+
+    .calcText {
+        max-width: 58%;
+        color: rgba(0, 0, 0, 0.86);
+        font-family: 'Montaga';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-weight: bold;
+    }
+
+    .auto-layout-type-buttonTop {
+        display: none;
+    }
+
+    .auto-layout-type-buttonBottom {
+        margin-bottom: 1rem;
+    }
+
+    /* RODAPÉ (FOOTER) */
+    /* FALE CONOSCO */
+    #faleConosco {
+        background-color: hsl(60, 100%, 86%);
+    }
+
+    .footerTop {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footer_p {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1.25rem;
+    }
+
+    #form_newsletter_inputEmail {
+        display: flex;
+        padding: 0.25rem;
+        border: 1px solid #866DA0;
+    }
+
+    #form_newsletter_button {
+        display: flex;
+        justify-content: left;
+        padding: 0.125rem 1rem 0.125rem 1rem;
+        background-color: #645178;
+        font-family: 'Monomaniac One', sans-serif;
+        border: 1px solid #645178;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
+    #form_newsletter_button:hover {
+        cursor: pointer;
+        background-color: #866DA0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .label-menu {
+        display: flex;
+        cursor: pointer;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid black;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: black;
+        margin-top: 0.3125rem;
+    }
+
+    .header_nav_ul {
+        list-style: none;
+        gap: 0.5rem;
+        display: none;
+        justify-content: center;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        z-index: 6;
+        box-shadow: 0px 29px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    #checkbox:checked~.header_nav_ul {
+        display: block;
+    }
+
+    .header_nav_ul a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        margin-inline: 0.75rem;
+        font-size: 21px;
+    }
+
+    .header_nav_ul_li_a:hover {
+        transition: 0.5s;
+        color: #614d7b;
+    }
+
+    /* BANNER */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFF84;
+        overflow: hidden;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .bannerImg {
+        position: absolute;
+        opacity: 0.2;
+        z-index: 2;
+        margin: 10px;
+        display: flex;
+        max-height: 48%;
+    }
+
+    .bannerContent {
+        text-align: center;
+        z-index: 3;
+        margin: 10px;
+        max-width: 41%;
+    }
+
+    .h1_banner {
+        color: #000;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 35, 5%;
+    }
+
+    .roxo {
+        color: #866DA0;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .paragraph_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #272721;
+        text-align: center;
+        font-family: 'Montaga', serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btnSaibaMais {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: #866DA0;
+        border: 1px solid #866DA0;
+        border-radius: 16px;
+        padding: 0.75rem 3rem 0.75rem 3rem;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #btnSaibaMais:hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    /* SOBRE NÓS */
+    #aboutUs {
+        margin: 5% 5% 5% 10%;
+    }
+
+    .aboutUsText {
+        font-size: 21px;
+        max-width: none;
+    }
+
+    .ancora_etechas {
+        color: #645178;
+        text-decoration: none;
+    }
+
+    .ancora_etechas:hover {
+        text-decoration: underline;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+
+    /* CALCULADORA */
+    #calculadora {
+        background-image: url(../img/Background.png);
+        position: relative;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .calcContent {
+        margin: 5% 5% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #calcButtonID {
+        text-decoration: none;
+        color: white;
+        background-color: #866DA0;
+        border-radius: 1.125rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-family: 'Monomaniac One', sans-serif;
+        font-size: 24px
+    }
+
+    #calcButtonID:hover {
+        font-size: 1.625rem;
+        background-color: #645178;
+    }
+
+    .calcText {
+        max-width: 58%;
+        color: rgba(0, 0, 0, 0.86);
+        font-family: 'Montaga';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-weight: bold;
+    }
+
+    .auto-layout-type-buttonTop {
+        display: none;
+    }
+
+    .auto-layout-type-buttonBottom {
+        margin-bottom: 1rem;
+    }
+
+    /* RODAPÉ (FOOTER) */
+    /* FALE CONOSCO */
+    #faleConosco {
+        background-color: hsl(60, 100%, 86%);
+    }
+
+    .footerTop {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footerLeft {
+        max-width: 45%;
+    }
+
+    .footer_p {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1.25rem;
+    }
+
+    #form_newsletter_inputEmail {
+        display: flex;
+        padding: 0.5rem;
+        border: 1px solid #866DA0;
+    }
+
+    #form_newsletter_button {
+        display: flex;
+        justify-content: left;
+        padding: 0.125rem 1rem 0.125rem 1rem;
+        background-color: #645178;
+        font-family: 'Monomaniac One', sans-serif;
+        border: 1px solid #645178;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
+    #form_newsletter_button:hover {
+        cursor: pointer;
+        background-color: #866DA0;
+    }
+}

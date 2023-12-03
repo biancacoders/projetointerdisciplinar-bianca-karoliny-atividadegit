@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/landingPage.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Monomaniac+One&family=Poppins:wght@300;400&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Monomaniac+One&family=Montaga&family=Poppins:wght@300;400&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/scriptLandingPage.js"></script>
+
+    <title>MatrXyz</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="img/Logo.png" width="45"></a>
+        </div>
+        <nav class="header_nav">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label-menu">
+                <span class="hamburger"></span>
+            </label>
+            <ul class="header_nav_ul">
+                <li class="header_nav_ul_li"><a href="#" class="header_nav_ul_li_a" style="color:#735e89">HOME</a></li>
+                <li class="header_nav_ul_li"><a href="#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
+                <li class="header_nav_ul_li"><a href="calculadora.html" class="header_nav_ul_li_a">Calculadora</a></li>
+                <li class="header_nav_ul_li"><a href="#faleConosco" class="header_nav_ul_li_a">Fale
+                        Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION DO BANNER -->
+    <section class="banner">
+        <img src="img/img_banner1.png" alt="Novidades" height="425" class="bannerImg">
+        <div class="bannerContent">
+            <h1 class="h1_banner">Conheça agora a <spam class="roxo">CALCTECH</spam>
+            </h1> <br>
+            <p class="paragraph_banner">A CalcTech é a nova calculadora inteligente desenvolvida pela MatrXyz para
+                solucionar suas equações de uma maneira mais fácil e rápida!
+            </p>
+            <br>
+            <div class="banner_button">
+                <a href="#calculadora" id="btnSaibaMais">Saiba Mais →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção sobre nós -->
+    <section id="aboutUs">
+        <div class="aboutUsText">
+            <h2 class="h2">Sobre Nós </h2> <br>
+            <p class="aboutUsParagraph">
+                Nós da MatrXyz, visamos nosso compromisso à desenvolver novas tecnologias e aplicá-las em
+                ferramentas fáceis para seu dia a dia. Somos uma StartUp focada no desenvolvimento, contando
+                com uma equipe técnica de qualidade, gerenciada com comprometimento. Nossa base se deu início
+                na instituição de ensino técnico <a href="https://etechoracio.com.br/has/" class="ancora_etechas">ETEC
+                    Prof. Horácio Augusto da Silveira</a>. <br> <br>
+
+                Com o avanço da tecnologia, aplicamos a mesma em soluções práticas de possíveis problemas
+                matemáticos
+                do dia a dia afim de otimizar nosso tempo. <br> <br>
+
+                Já pensou em fazer parte da nossa história?
+                Envie-nos uma mensagem agora mesmo e junte-se ao futuro. <br> <br>
+
+                <spam class="descricao">MatrXyz, criando soluções e trazendo novos tempos!</spam>
+            </p>
+        </div>
+        <div class="aboutUsImage">
+
+        </div>
+    </section>
+
+    <!-- Seção sobre a calculadora -->
+    <section id="calculadora">
+        <div class="calcContent">
+            <div class="calcButton auto-layout-type-buttonTop">
+                <a href="calculadora.html" id="calcButtonID" class="auto-layout-type-buttonTop">CALCULAR!</a>
+            </div>
+
+            <div class="calcText">
+                <h2 class="h2">CalcTech</h2>
+                <p>
+                    À partir da ideia de otimização do tempo útil do dia a dia, viu se a necessidade da criação de
+                    diversos aplicativos para atender a necessidade pessoal e profissional.
+                </p> <br>
+                <p>
+                    A CalcTech foi pensada para facilitar o cálculo de equações de segundo grau, utilizando a fórmula
+                    de Bhaskara. Inserindo apenas o valor A, B e C, o valor do Delta e o valor 'X1' e 'X2' são
+                    oferecidos
+                    em poucos segundos!
+                </p> <br>
+                <p>
+                    Clique agora para utilizar nossa calculadora de forma gratuita!
+                </p>
+            </div>
+
+            <div class="calcButton auto-layout-type-buttonBottom">
+                <br> <br>
+                <a href="calculadora.html" id="calcButtonID" class="auto-layout-type-buttonBottom">CALCULAR!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé do site, onde estão as informações de contato e newsletter -->
+    <footer id="faleConosco">
+        <div class="footerTop">
+            <div class="footerLeft">
+                <p>Deseja receber novidades antes que qualquer um? <br> Inscreva-se em nossa Newsletter:</p> <br>
+                <form action="" class="form_newsletter">
+                    <input type="email" placeholder="E-mail" id="form_newsletter_inputEmail">
+                    <spam class="hidden" id="form_newsletter_feedback" style="font-size: 12px;">Preencha o campo acima
+                    </spam>
+                    <button id="form_newsletter_button" onclick="newsletter(event)">Inscrever</button>
+                </form>
+                <br>
+            </div>
+            <div class="footerRight">
+                <h3 class="h3">Contatos:</h3>
+                <a href="#"><img src="img/whatsapp.png" alt="" width="36"></a> <br>
+                <a href="#"><img src="img/discord.png" alt="" width="40"></a>
+            </div>
+        </div>
+
+        <p class="footer_p">©️ 2023. MatrXyz todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

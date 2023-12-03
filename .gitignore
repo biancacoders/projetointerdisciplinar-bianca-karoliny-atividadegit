@@ -1,0 +1,10 @@
+# PASTAS
+/node_modules
+/img
+
+# ARQUIVOS
+server.js
+.env
+
+package.json
+package-lock.json
